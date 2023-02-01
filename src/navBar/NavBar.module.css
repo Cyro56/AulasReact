@@ -1,0 +1,19 @@
+.list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  background-color: rgb(58, 105, 191);
+  height: 40px;
+  margin-top: 0;
+  align-items: center;
+}
+
+.item {
+  margin-right: 1em;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(14, 10, 10);
+}
