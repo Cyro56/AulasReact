@@ -20,6 +20,14 @@ function SingleProduct({ products }) {
           }).format(singleProduct?.price)}
         </p>
       </div>
+      <div className={styles.buyButton}>
+        <a
+          target={"_blank"}
+          href="https://well.ca/products/l-oreal-paris-voluminous-mascara_25094.html"
+        >
+          Compra
+        </a>
+      </div>
     </div>
   );
 }

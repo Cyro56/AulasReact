@@ -21,14 +21,18 @@ function App() {
       });
   }, []);
 
-  let productsList = products?.filter((product) => product?.id < 40);
+  let productsList = products?.filter((product) => product?.id < 4);
+  let productsPage = products?.filter((product) => product?.id < 40);
 
   return (
     <Router>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home productsList={productsList} />}></Route>
-        <Route path="/Produto" element={<Produto />}></Route>
+        <Route
+          path="/Produto"
+          element={<Produto products={productsPage} />}
+        ></Route>
         <Route
           path="/Produto/:id"
           element={<SingleProduct products={products} />}

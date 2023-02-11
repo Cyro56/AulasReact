@@ -1,3 +1,16 @@
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.cardProduto {
+  background-color: aqua;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -5,16 +18,32 @@
   list-style: none;
   align-items: center;
 }
+.homeCard {
+  display: flex;
+}
 .cardSingleProduct {
   border: 1px solid black;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 350px;
   margin: 0 auto;
   border-radius: 8px;
   list-style: none;
   align-items: center;
+}
+.cardSingleProductHome {
+  display: flex;
+  width: 350px;
+  height: 700px;
+  flex-direction: column;
+  margin: 0 auto;
+  border-radius: 8px;
+  align-items: center;
+  margin-left: 10px;
+  border: 1px solid black;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .cardTitle {
@@ -30,4 +59,19 @@
   height: 80px;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.buyButton {
+  background-color: rgb(168, 22, 22);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 10px;
+  width: 100px;
+}
+
+.buyButton a {
+  color: #fff;
 }
